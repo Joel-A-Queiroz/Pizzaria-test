@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pizzas.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Favico.png" type="image/x-icon">
+    <script src="./script-pizza-valores.js" defer></script>
+    <title>Pizzas</title>
+</head>
+<body>
+
+     <header>
+      <img class="header-inicial" src="./Header.png" alt="Imagem de pizza com chapéu de pizzaiolo">
+          <nav class="menu">
+    <ul>
+      <li><a href="./pizzas.html" target="_blank">Pizzas</a></li>
+      <li><a href="#refrigerantes">Refrigerantes & Sucos</a></li>
+      <li class="local"><a href="#local">Local</a></li>
+    </ul>
+  </nav>
+    </header>
+    
+    <h1>Nossas Pizzas</h1>
+
+    <form id="form-salgadas" action="." method="get">
+      <fieldset>
+        <legend>Salgadas</legend>
+        <select name="Pizzas-salgadas" id="Salgadas" required>
+          <option value="atum" data-preco="35">Atum</option>
+          <option value="alema" data-preco="45">Alema</option>
+          <option value="Calabresa" data-preco="35">Calabresa</option>
+          <option value="Carioca" data-preco="40">Carioca</option>
+          <option value="CalabresaCatupiry" data-preco="47">Calabresa com Catupiry</option>
+        </select>
+        <input type="submit" value="Enviar">
+      </fieldset>
+      </form>
+
+      <form id="form-salgadas-meia" method="get">
+      <fieldset>
+        <legend>Meio a meio</legend>
+        <select id="meio-meio1" name="Pizzas-salgadas-meia" required>
+          <option value="atum-meia" data-preco="35">Atum</option>
+          <option value="alema-meia" data-preco="45">Alema</option>
+          <option value="Calabresa-meia" data-preco="35">Calabresa</option>
+          <option value="Carioca-meia" data-preco="40">Carioca</option>
+          <option value="CalabresaCatupiry-meia" data-preco="47">Calabresa com Catupiry</option>
+        </select>
+        <br>
+        <select id="meio-meio2" name="Pizzas-salgadas-meia" required>
+          <option value="atum-meia" data-preco="35">Atum</option>
+          <option value="alema-meia" data-preco="45">Alema</option>
+          <option value="Calabresa-meia" data-preco="35">Calabresa</option>
+          <option value="Carioca-meia" data-preco="40">Carioca</option>
+          <option value="CalabresaCatupiry-meia" data-preco="47">Calabresa com Catupiry</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+      </fieldset>
+      </form>
+      <br>
+      <form id="form-doces" action="." method="get">
+      <fieldset>
+        <legend>Doces</legend>
+        <select name="Pizzas-doces" id="doces" required>
+          <option value="Brigadeiro" data-preco="40">Brigadeiro</option>
+          <option value="Beijinho" data-preco="40">Beijinho</option>
+          <option value="Doce de Leite" data-preco="30">Doce de leite</option>
+          <option value="Romeo e Julieta" data-preco="43">Romeo e Julieta</option>
+        </select>
+        <input type="submit" value="Enviar">
+      </fieldset>
+      </form>
+
+      <h2></h2>
+      <h3></h3>
+      <h4 id="meio-a-meio"></h4>
+      <h5 id="total"></h5>
+    
+</body>
+</html>
