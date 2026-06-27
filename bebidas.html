@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bebidas.css" />
+    <link rel="icon" href="./Favico.png" />
+    <!--<script src="./JS/script-dom.js" defer></script>-->
+    <!--<script src="./JS/script-pizza-valores.js" defer></script>-->
+    <script src="./JS/script-bebidas.js" defer></script>
+
+    <title>Bebidas</title>
+  </head>
+  <body>
+    <header>
+      <a class="compras" href="./index.html">
+        <img src="./image/Header.png" alt="carrinho de compras"
+      /></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="./pizzas.html" target="_blank">Pizzas</a></li>
+          <li>
+            <a href="./bebidas.html" target="_blank">Refrigerantes & Sucos</a>
+          </li>
+          <li class="local"><a href="#local">Local</a></li>
+        </ul>
+      </nav>
+      <a class="compras" href="./finalizar-compra.html" target="_blank">
+        <img src="./image/Carrinho-leve.png" alt="carrinho de compras"
+      /></a>
+    </header>
+
+    <form class="bebidas" id="pagina-bebidas">
+      <fieldset>
+        <legend class="legenda">Bebidas (lata)</legend>
+
+        <select name="opcoes-bebidas" id="escolha-bebida">
+          <option value="Coca-Cola(lata)" data-preco="8">Coca-Cola</option>
+          <option value="Guarana(lata)" data-preco="5">Guarana</option>
+          <option value="Pepsi(lata)" data-preco="7">Pepsi</option>
+          <option value="Fanta(lata)" data-preco="5">Fanta</option>
+        </select>
+        <br />
+        <button id="enviar-lata" type="button">Enviar</button>
+      </fieldset>
+    </form>
+
+    <form id="bebidas-litro">
+      <fieldset>
+        <legend class="legenda">Bebidas 2 litros</legend>
+        <select name="bebidas-2litros" id="escolha-bebida2">
+          <option value="Coca-cola-2" data-preco="15">Coca-Cola</option>
+          <option value="Guarana-2" data-preco="10">Guarana</option>
+          <option value="Pepsi-2" data-preco="13">Pepsi</option>
+          <option value="Fanta-2" data-preco="10">Fanta</option>
+          <option value="DelVale" data-preco="11">Del Valle</option>
+          <option value="Itubaina-2" data-preco="8">Itubaina</option>
+        </select>
+        <br />
+        <button id="enviar-Litro" type="button">Enviar</button>
+      </fieldset>
+    </form>
+
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+
+    <button class="add-carrinho" type="button">Enviar ao carrinho</button>
+  </body>
+</html>
