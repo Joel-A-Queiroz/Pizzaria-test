@@ -1,0 +1,36 @@
+body {
+  background-image: url(../image/bebida-reduzida.png);
+  background-repeat: repeat;
+  background-size: cover;
+  height: 700px;
+  max-width: 100%;
+}
+
+fieldset {
+  height: 80px;
+  border-radius: 10px;
+}
+
+.legenda {
+  font-weight: bold;
+  background-color: gray;
+}
+
+.bebidas {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2,
+h3,
+h4 {
+  background-color: yellow;
+  width: 500px;
+  font-size: 20px;
+}
+
+h5 {
+  background-color: red;
+  font-size: 25px;
+  font-weight: 30px;
+}

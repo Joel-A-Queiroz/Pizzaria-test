@@ -16,16 +16,21 @@ button {
 header {
   display: flex;
   align-items: center;
-  justify-content: center; /* centraliza o conteúdo flex */
+  justify-content: space-between; /* centraliza o conteúdo flex */
   background: #999;
-  padding: 45px 0;
+  padding: 45px 40px;
   position: relative;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .menu ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 30px;
   margin: 0;
   padding: 0;
@@ -36,6 +41,10 @@ header {
   font-size: 18px;
   color: #333;
   font-weight: 600;
+}
+
+a.compras img {
+  width: 120px;
 }
 
 .menu a:hover {
@@ -55,8 +64,7 @@ header {
 }
 
 .header-inicial {
-  position: absolute;
-  left: 45px;
+  position: static;
   height: 90px;
   width: auto;
 }

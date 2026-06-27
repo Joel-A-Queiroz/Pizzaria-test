@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./Favico.png" />
-    <script src="./JS/script-dom.js" defer></script>
-    <script src="./JS/script-pizza-valores.js" defer></script>
-    <title>Pizzaria teste</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/comprar.css" />
+    <link rel="shortcut icon" href="./Favico.png" type="image/x-icon" />
+    <script src="./JS/script-compra.js" defer></script>
+    <title>Carrinho</title>
   </head>
   <body>
     <header>
@@ -23,12 +23,25 @@
           <li class="local"><a href="#local">Local</a></li>
         </ul>
       </nav>
-      <a class="compras" href="./finalizar-compra.html">
+      <a class="compras" href="./finalizar-compra.html" target="_blank">
         <img src="./image/Carrinho-leve.png" alt="carrinho de compras"
       /></a>
     </header>
-    <section class="img-inicial">
-      <img src="./image/Pizzaria leve.png" alt="imagem de pizza na lenha" />
-    </section>
+
+    <table id="tabela-carrinho">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2 id="total-final"></h2>
+
+    <button class="apagar-todos-carrinho">Apagar todos o itens</button>
   </body>
 </html>

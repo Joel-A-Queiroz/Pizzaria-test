@@ -1,5 +1,5 @@
 body {
-  background: url(./Pagina-pizza.png);
+  background: url(../image/Pagina-pizza.png);
   background-repeat: repeat;
   background-size: cover;
   height: 700px;
@@ -29,4 +29,9 @@ h5 {
   background-color: red;
   width: 500px;
   font-size: 25px;
+}
+
+.legenda {
+  font-weight: bold;
+  background-color: gray;
 }
